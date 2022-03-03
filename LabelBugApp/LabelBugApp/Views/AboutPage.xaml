@@ -11,7 +11,7 @@
     My implementation needs this outermost StackLayout to be here for this bug (or one like it): https://github.com/xamarin/Xamarin.Forms/issues/13398
     But to reproduce this bug it doesn't need to be there.
     <StackLayout x:Name="topStackLayout">-->
-    <ScrollView>
+    <!-- My implementation also has a scroll view but that doesn't seem to affect the bug either.<ScrollView>-->
         <StackLayout Margin="30" Padding="0">
             <Label Text="Lorem ipsum dolor sit amet, consectetaur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum and some more and some more to get it." 
                    TextColor="Black"
@@ -25,5 +25,4 @@
                     Padding="10,0,10,0"
                     FontSize="14" />-->
         </StackLayout>
-    </ScrollView>
 </ContentPage>
