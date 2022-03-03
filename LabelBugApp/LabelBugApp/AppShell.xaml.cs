@@ -1,7 +1,4 @@
-﻿using LabelBugApp.ViewModels;
-using LabelBugApp.Views;
-using System;
-using System.Collections.Generic;
+﻿using System;
 using Xamarin.Forms;
 
 namespace LabelBugApp
@@ -11,12 +8,6 @@ namespace LabelBugApp
         public AppShell()
         {
             InitializeComponent();
-            Routing.RegisterRoute(nameof(NewItemPage), typeof(NewItemPage));
-        }
-
-        private async void OnMenuItemClicked(object sender, EventArgs e)
-        {
-            await Shell.Current.GoToAsync("//LoginPage");
         }
     }
 }

@@ -1,5 +1,4 @@
-﻿using LabelBugApp.Services;
-using LabelBugApp.Views;
+﻿using LabelBugApp.Views;
 using System;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
@@ -12,8 +11,6 @@ namespace LabelBugApp
         public App()
         {
             InitializeComponent();
-
-            DependencyService.Register<MockDataStore>();
             MainPage = new AppShell();
         }
 
