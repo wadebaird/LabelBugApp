@@ -16,7 +16,6 @@
                        Margin="0"
                        Padding="10,0,10,0"
                        FontSize="14" />
-
             </StackLayout>
         </ScrollView>
     </StackLayout>
