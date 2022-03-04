@@ -12,11 +12,10 @@
     But to reproduce this bug it doesn't need to be there.
     <StackLayout x:Name="topStackLayout">-->
     <!-- My implementation also has a scroll view but that doesn't seem to affect the bug either.<ScrollView>-->
-    <StackLayout Margin="30" Padding="0">
         <Label Text="Lorem ipsum dolor sit amet, consectetaur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum and some more and some more to get it." 
-                   TextColor="Black"
-                    Padding="10,0,10,0"
-                    FontSize="14" />
+                TextColor="{AppThemeBinding Light=Black, Dark=White}"
+                Padding="10,0,10,0"
+                FontSize="14" />
         <!-- Original: This is the original, I reduced the above label to the minimum needed to reproduce the bug.
             <Label Text="Lorem ipsum dolor sit amet, consectetaur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum and some more and some more to get it." 
                     HorizontalOptions="Center" 
@@ -24,5 +23,4 @@
                     Margin="0"
                     Padding="10,0,10,0"
                     FontSize="14" />-->
-    </StackLayout>
 </ContentPage>
